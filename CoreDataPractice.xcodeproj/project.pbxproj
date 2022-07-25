@@ -11,12 +11,15 @@
 		66FAA997288A5F0400DDF431 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA996288A5F0400DDF431 /* SceneDelegate.swift */; };
 		66FAA999288A5F0400DDF431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA998288A5F0400DDF431 /* ViewController.swift */; };
 		66FAA99C288A5F0400DDF431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FAA99A288A5F0400DDF431 /* Main.storyboard */; };
-		66FAA99F288A5F0400DDF431 /* CoreDataPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA99D288A5F0400DDF431 /* CoreDataPractice.xcdatamodeld */; };
+		66FAA99F288A5F0400DDF431 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA99D288A5F0400DDF431 /* Model.xcdatamodeld */; };
 		66FAA9A1288A5F0500DDF431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FAA9A0288A5F0500DDF431 /* Assets.xcassets */; };
 		66FAA9A4288A5F0500DDF431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FAA9A2288A5F0500DDF431 /* LaunchScreen.storyboard */; };
 		66FAA9AF288A5F0600DDF431 /* CoreDataPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA9AE288A5F0600DDF431 /* CoreDataPracticeTests.swift */; };
 		66FAA9B9288A5F0600DDF431 /* CoreDataPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA9B8288A5F0600DDF431 /* CoreDataPracticeUITests.swift */; };
 		66FAA9BB288A5F0600DDF431 /* CoreDataPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA9BA288A5F0600DDF431 /* CoreDataPracticeUITestsLaunchTests.swift */; };
+		66FAA9C8288A6E1B00DDF431 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA9C7288A6E1B00DDF431 /* PersistenceManager.swift */; };
+		66FAA9CB288A95C700DDF431 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA9C9288A95C700DDF431 /* Contact+CoreDataClass.swift */; };
+		66FAA9CE288A9A0100DDF431 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAA9CD288A9A0100DDF431 /* Contact+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		66FAA9B4288A5F0600DDF431 /* CoreDataPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FAA9B8288A5F0600DDF431 /* CoreDataPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITests.swift; sourceTree = "<group>"; };
 		66FAA9BA288A5F0600DDF431 /* CoreDataPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66FAA9C7288A6E1B00DDF431 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		66FAA9C9288A95C700DDF431 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		66FAA9CD288A9A0100DDF431 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		66FAA988288A5F0400DDF431 = {
 			isa = PBXGroup;
 			children = (
+				66FAA9CD288A9A0100DDF431 /* Contact+CoreDataProperties.swift */,
+				66FAA9C9288A95C700DDF431 /* Contact+CoreDataClass.swift */,
 				66FAA993288A5F0400DDF431 /* CoreDataPractice */,
 				66FAA9AD288A5F0600DDF431 /* CoreDataPracticeTests */,
 				66FAA9B7288A5F0600DDF431 /* CoreDataPracticeUITests */,
@@ -108,7 +116,8 @@
 				66FAA9A0288A5F0500DDF431 /* Assets.xcassets */,
 				66FAA9A2288A5F0500DDF431 /* LaunchScreen.storyboard */,
 				66FAA9A5288A5F0500DDF431 /* Info.plist */,
-				66FAA99D288A5F0400DDF431 /* CoreDataPractice.xcdatamodeld */,
+				66FAA99D288A5F0400DDF431 /* Model.xcdatamodeld */,
+				66FAA9C7288A6E1B00DDF431 /* PersistenceManager.swift */,
 			);
 			path = CoreDataPractice;
 			sourceTree = "<group>";
@@ -262,9 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FAA999288A5F0400DDF431 /* ViewController.swift in Sources */,
+				66FAA9C8288A6E1B00DDF431 /* PersistenceManager.swift in Sources */,
+				66FAA9CE288A9A0100DDF431 /* Contact+CoreDataProperties.swift in Sources */,
 				66FAA995288A5F0400DDF431 /* AppDelegate.swift in Sources */,
 				66FAA997288A5F0400DDF431 /* SceneDelegate.swift in Sources */,
-				66FAA99F288A5F0400DDF431 /* CoreDataPractice.xcdatamodeld in Sources */,
+				66FAA9CB288A95C700DDF431 /* Contact+CoreDataClass.swift in Sources */,
+				66FAA99F288A5F0400DDF431 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,13 +620,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		66FAA99D288A5F0400DDF431 /* CoreDataPractice.xcdatamodeld */ = {
+		66FAA99D288A5F0400DDF431 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				66FAA99E288A5F0400DDF431 /* CoreDataPractice.xcdatamodel */,
 			);
 			currentVersion = 66FAA99E288A5F0400DDF431 /* CoreDataPractice.xcdatamodel */;
-			path = CoreDataPractice.xcdatamodeld;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
